@@ -1,3 +1,4 @@
+
 use std::fmt::{self, Formatter, Display};
 
 /* Demonstrates printing of a user defined struct using println! macro.*/
@@ -43,7 +44,9 @@ fn main() {
         Color { red: 0, green: 3, blue: 254 },
         Color { red: 0, green: 0, blue: 0 },
     ].iter() {
+
         // Hint : Fix the code so you can print it using {}
-        println!("{:?}", *color);
+        // Revised println! statement to just print each induvidual variable.
+        println!("red: {}, green: {}, blue: {}", color.red, color.green, color.blue);
     }
 }
